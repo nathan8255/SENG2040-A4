@@ -90,7 +90,7 @@
 <div class="mt-1" id="post-box"></div>
 <hr>
 <div>
-    <img id="post-avatar" src="{{obj.author.avatar.url}}" alt="Avatar" class="avatar">
+    <img id="post-avatar" src="{{obj.author.avatar.url}}" alt="Avatar" class="avatar" onclick="location.href = '/profiles/{{obj.author.pk}}'">
     <span>{{obj.author.user}}</span>
 </div>
 

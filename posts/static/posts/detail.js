@@ -18,9 +18,6 @@ const bodyInput = document.getElementById("id_body")
 
 const csrf = document.getElementsByName('csrfmiddlewaretoken')
 
-const postAvatar = document.getAnimations('post-avatar')
-
-
 $.ajax({
     type: 'GET',
     url: url,
@@ -103,8 +100,4 @@ deleteForm.addEventListener('submit', e=>{
             console.log(error)
         },
     })
-})
-
-postAvatar.addEventListener('click', ()=>{
-    
 })
