@@ -25,4 +25,12 @@ def my_profile_view(request):
 
     return render(request, 'profiles/main.html', context)
 
-def profile_view(request, pk):
+@login_required
+def profile_detail(request, pk):
+    obj = Profile.objects.get(pk=pk)
+
+    context = {
+        'obj': obj,
+    }
+
+    return render(request, 'profiles/profile.html', context)
