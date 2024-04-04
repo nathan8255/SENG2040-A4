@@ -24,3 +24,5 @@ def my_profile_view(request):
     }
 
     return render(request, 'profiles/main.html', context)
+
+def profile_view(request, pk):
