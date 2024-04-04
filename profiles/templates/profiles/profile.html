@@ -19,6 +19,6 @@ profile
         {% csrf_token %}
         <p><b>Bio:</b></p>
         <p>{{obj.bio}}</p>
-        <button id="back-btn" class="btn btn-info">back</button>
+        <input type=button value="back" class="btn btn-info" onClick="javascript:history.go(-1);">
     </form>
 {% endblock content %}
